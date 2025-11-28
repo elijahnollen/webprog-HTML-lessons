@@ -1,52 +1,61 @@
 .container {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;  
-    grid-template-rows: auto;  
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto 1.5fr 1.5fr auto;
     gap: 10px;
-    background-color: dodgerblue;
     padding: 10px;
+    background-color: #eee;
+ 
+    grid-template-areas:
+        "nav nav nav"
+        "header header header"
+        "edu main main"
+        "course main main"
+        "aside1 aside2 aside3";
 }
  
-.container > div {
-    background-color: #f1f1f1;
-    color: #000;
-    padding: 10px;
-    font-size: 16px;
-    text-align: center;
+.container > * {
+    padding: 20px;
+    border-radius: 5px;
 }
  
-header {
-    grid-column: 1 / 4;
-    background-color: pink;
+.navigation-bar {
+    grid-area: nav;
+    background-color: #ffe082;
 }
- 
  
 .about-me {
-    grid-column: 1 / 2;
-    background-color: lightpurple;
+    grid-area: header;
+    background-color: #f48fb1; 
 }
  
-.main-content {
-    grid-column: 2 / 3;
-    background-color: lightblue;
+.education {
+    grid-area: edu;
+    background-color: #d1c4e9; 
 }
  
-.side-bar {
-    grid-column: 1 / 2;
-    background-color: lightgreen;
+
+.course {
+    grid-area: course;
+    background-color: #b39ddb;
 }
  
-.aside-1 {
-    grid-column: 1 / 2; /* Aside 1 */
-    background-color: lightcoral;
+.picture-gallery {
+    grid-area: main;
+    background-color: #b2ebf2; 
 }
  
-.aside-2 {
-    grid-column: 2 / 3; /* Aside 2 */
-    background-color: lightgreen;
+.it-experience {
+    grid-area: aside1;
+    background-color: #ffccbc;
 }
  
-.aside-3 {
-    grid-column: 3 / 4;
-    background-color: lightgray;
+.hobbies {
+    grid-area: aside2;
+    background-color: #c8e6c9; 
+}
+
+.goals {
+    grid-area: aside3;
+    background-color: #e1bee7; 
 }
