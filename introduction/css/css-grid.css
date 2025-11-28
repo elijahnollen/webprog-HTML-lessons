@@ -1,14 +1,81 @@
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  background-color: dodgerblue;
-  padding: 5px;
-  gap: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-areas:
+        "navigation-bar navigation-bar navigation-bar"
+        "header header sidebar"
+        "aside1 aside2 aside3";
+    background-color: dodgerblue;
+    padding: 10px;
+    gap: 5px;
 }
-.container div {
-  background-color: #f1f1f1;
-  color: #000;
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
+ 
+.navigation-bar {
+    grid-area: navigation-bar;
+    background-color: lightyellow;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+ 
+.header {
+    grid-area: header;
+    background-color: lightpink;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+ 
+.main-content {
+    grid-area: main-content;
+    background-color: lightcyan;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+ 
+.sidebar {
+    grid-area: sidebar;
+    background-color: lavender;
+    padding: 10px;
+    font-size: 20px;
+}
+ 
+.education {
+    background-color: lightgreen;
+    padding: 10px;
+    font-size: 20px;
+}
+ 
+.course {
+    background-color: lightcoral;
+    padding: 10px;
+    font-size: 20px;
+}
+ 
+.aside1 {
+    background-color: lightpink;
+    padding: 10px;
+    font-size: 20px;
+}
+ 
+.aside2 {
+    background-color: lightgreen;
+    padding: 10px;
+    font-size: 20px;
+}
+ 
+.aside3 {
+    background-color: lavender;
+    padding: 10px;
+    font-size: 20px;
+}
+ 
+.footer {
+    grid-column: span 3;
+    background-color: lightgray;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
 }
