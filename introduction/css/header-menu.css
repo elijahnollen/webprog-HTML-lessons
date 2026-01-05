@@ -87,10 +87,9 @@ section {
     font-weight: bold;
 }
 
-h2 {
-    display: none; 
+.visually-hidden {
+    display: none;
 }
-
 
 @media (max-width: 768px) {
     .header-section {
