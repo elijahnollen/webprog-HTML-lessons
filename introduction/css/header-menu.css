@@ -52,7 +52,7 @@ section {
     padding: 0 15px;
 }
 
-/* Navigation bar container with horizontal scroll for mobile */
+/* Navigation bar container */
 .menu-space {
     position: sticky;
     top: 15vh;
@@ -65,7 +65,6 @@ section {
     text-align: right; 
     overflow-x: auto;
     white-space: nowrap;
-    -webkit-overflow-scrolling: touch; 
 }
 
 /* Individual navigation links */
