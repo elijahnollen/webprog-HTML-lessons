@@ -125,3 +125,11 @@
     font-size: 0.9rem;
     color: black !important;
 }
+
+h4 {
+  font-family: 'Shantell Sans', cursive;
+  font-size: 1.4rem; 
+  font-weight: 700;   
+  margin-top: 1.5rem; 
+  color: #222;
+}
