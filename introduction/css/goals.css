@@ -64,8 +64,6 @@
 .goal-cloud::before { width: 60px; height: 60px; top: -20px; left: 10px; }
 .goal-cloud::after { width: 50px; height: 50px; bottom: -15px; right: 10px; }
 
-p { margin: 0; position: relative; z-index: 2; font-weight: bold; }
-
 @media (max-width: 700px) {
   .cloud-map {
     display: flex;
