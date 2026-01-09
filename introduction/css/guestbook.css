@@ -227,4 +227,7 @@ html, body {
 @media (max-width: 380px) {
 
   .sticker-grid {
-    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr))
+  }
+
+}
