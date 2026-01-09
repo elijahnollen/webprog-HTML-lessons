@@ -179,7 +179,7 @@
                                         <textarea placeholder="Say something (optional)" v-model="formData.message"></textarea>
                                         <div class="sticker-dropzone">
                                             <p v-if="!selectedSticker">Sticker here</p>
-                                            <img v-else :src="selectedSticker" class="active-sticker-preview">
+                                            <img v-else :src="selectedSticker" alt="Selected sticker preview" class="active-sticker-preview">
                                         </div>
                                     </div>
                                     <button type="submit" class="doodle-submit">SUBMIT</button>
@@ -197,7 +197,7 @@
                                     @click="selectedSticker = src"
                                     :class="{ 'is-selected': selectedSticker === src }"
                                     class="doodle-sticker"
-                                    />
+                                    >
                                 </div>
                                 <p class="hint-text">(Click a sticker to add it!)</p>
                             </div>
