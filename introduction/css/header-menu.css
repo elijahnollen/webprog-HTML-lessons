@@ -7,6 +7,7 @@
 html {
     scroll-behavior: smooth;
     height: auto;
+    overflow-y: visible; /* Required for sticky to work */
 }
 
 body {
@@ -14,6 +15,7 @@ body {
     min-height: 100vh;
     background-color: white !important;
     overflow-x: hidden;
+    overflow-y: visible; /* Required for sticky to work */
     font-family: 'Shantell Sans', cursive !important;
 }
 
@@ -27,14 +29,19 @@ section {
     padding: 40px 0;
 }
 
+/* Sticky wrapper */
+.header-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+
 /* Container for header background svg */
 .header-section {
-    position: sticky;
     top: 0;
     height: 15vh;
     min-height: 80px; 
     width: 100%;
-    z-index: 100;
     background: white url('../svg/header.svg') no-repeat center / cover;
     display: flex;
     justify-content: center;
@@ -54,10 +61,8 @@ section {
 
 /* Navigation bar container */
 .menu-space {
-    position: sticky;
     top: 15vh;
     min-height: 6vh;
-    z-index: 6;
     background-color: white;
     padding: 8px 0;
     border-top: 3px solid black;

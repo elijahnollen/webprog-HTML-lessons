@@ -168,12 +168,6 @@ input, textarea {
 
 
 
-/* Prevent overflow on small screens */
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
 /* Tablet */
 @media (max-width: 900px) {
 
