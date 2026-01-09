@@ -10,17 +10,10 @@
   color: var(--ink-color);
 }
 
-.guestbook-header h2 {
-  margin-top: 80px;   
-  margin-bottom: 40px;
-  text-align: center;
-  font-size: 1.2rem;
-  letter-spacing: 1px;
-}
 
 .guestbook-main {
   display: flex;
-  gap: 30px;
+  gap: 80px;
   justify-content: center;
   margin-top: 60px;
 }
