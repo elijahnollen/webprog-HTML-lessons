@@ -2,7 +2,7 @@
 
 .timeline-wrapper {
     position: relative;
-    height: 70vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     overflow-x: auto;
@@ -107,6 +107,35 @@ p {
     font-size: 0.9rem !important; 
     color: black !important; 
     line-height: 1.4; 
+}
+
+.direction-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute; 
+  top: 90px;      
+  left: 50%;    
+  transform: translateX(-50%); 
+  z-index: 10;
+}
+
+
+.direction-text {
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  background: black;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+  animation: bounce 2s infinite ease-in-out;
+}
+
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
 }
 
 @media (max-width: 768px) {

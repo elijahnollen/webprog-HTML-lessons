@@ -1,0 +1,123 @@
+:root {
+  --ink-color: #4b3832;
+  --paper-color: #fff9f0;
+  --accent-color: black;
+}
+
+.doodle-guestbook {
+  background-color: white;
+  padding: 100px 40px;
+  color: var(--ink-color);
+}
+
+.guestbook-header h2 {
+  margin-top: 80px;   
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.guestbook-main {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+/* Hand-drawn Box Effect */
+.hand-drawn-box {
+  border: 2px solid var(--ink-color);
+  padding: 20px;
+  background: white;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px; /* Wobbly borders */
+  box-shadow: 5px 5px 0px var(--accent-color);
+}
+
+.form-container, .sticker-container {
+  flex: 1;
+  max-width: 450px;
+}
+
+/* Inputs */
+input, textarea {
+  width: 100%;
+  border: 1px solid var(--ink-color);
+  background: transparent;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Message Area with Sticker Spot */
+.message-area {
+  position: relative;
+}
+
+.sticker-dropzone {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 60px;
+  height: 60px;
+  border: 2px dashed #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.8);
+}
+
+.sticker-dropzone p {
+  font-size: 10px;
+  color: #aaa;
+  text-align: center;
+}
+
+.active-sticker-preview {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+/* Sticker Choices Grid */
+.sticker-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.doodle-sticker {
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.2s;
+  filter: drop-shadow(2px 2px 0px var(--accent-color));
+}
+
+.doodle-sticker:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.doodle-sticker.is-selected {
+  border: 2px solid var(--accent-color);
+  border-radius: 50%;
+}
+
+.doodle-submit {
+  width: 100%;
+  background: var(--accent-color);
+  color: white;
+  border: 2px solid var(--ink-color);
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.hint-text {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 15px;
+  font-style: italic;
+}
