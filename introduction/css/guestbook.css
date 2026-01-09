@@ -47,6 +47,11 @@ input, textarea {
   position: relative;
 }
 
+.message-area textarea {
+  min-height: 180px;
+}
+
+
 .sticker-dropzone {
   position: absolute;
   bottom: 15px;
@@ -161,9 +166,7 @@ input, textarea {
     transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* =========================
-   RESPONSIVE LAYER (ADD-ONLY)
-   ========================= */
+
 
 /* Prevent overflow on small screens */
 html, body {
