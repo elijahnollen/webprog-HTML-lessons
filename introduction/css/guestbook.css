@@ -131,31 +131,28 @@ input, textarea {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px; /* Slightly larger to show off your custom art */
+    width: 50px; 
     height: 50px;
     background: #fff;
     border: 2px solid #000;
     text-decoration: none;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    
-    /* Hand-drawn wobbly circle effect */
+
     border-radius: 50% 45% 52% 48% / 48% 52% 45% 55%;
     
-    /* Hard shadow matching your SUBMIT button and grid */
     box-shadow: 3px 3px 0px #000;
-    overflow: hidden; /* Keeps the image inside the wobbly border */
+    overflow: hidden;
 }
 
-/* Styling for your uploaded icon images */
 .custom-icon {
-    width: 70%;  /* Leaves a nice white margin around your icon */
+    width: 70%; 
     height: 70%;
-    object-fit: contain; /* Prevents stretching */
+    object-fit: contain; 
     display: block;
 }
 
 .guest-icon-link:hover {
-    transform: translateY(-3px) rotate(-8deg); /* Playful doodle tilt */
+    transform: translateY(-3px) rotate(-8deg); 
     box-shadow: 5px 5px 0px #000;
     background-color: #fffef3;
 }
@@ -226,5 +223,6 @@ input, textarea {
   .sticker-grid {
     grid-template-columns: repeat(auto-fit, minmax(60px, 1fr))
   }
+
 
 }

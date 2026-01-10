@@ -9,7 +9,6 @@ createApp({
 
     const selectedSticker = ref(null);
 
-    // Add your doodle image URLs here
     const stickerAssets = [
       'img/star.png',
       'img/thinking.png',
@@ -27,4 +26,5 @@ createApp({
 
     return { formData, selectedSticker, stickerAssets, submitForm };
   }
+
 }).mount('#app');
